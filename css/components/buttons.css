@@ -2,8 +2,8 @@
 .line-link{
   position:relative;
   display: inline-block;
-  margin-left:25px;
-  padding:5px 10px;
+/*  margin-left:25px;*/
+  padding:5px 0px;
   padding-right:30px;
   background: rgba(255,255,255,.5);
   font-family: europa-regular;
@@ -29,8 +29,8 @@
   -moz-transition: all 0.6s;
   transition: all 0.6s;
 }
-.line-link:hover{padding-right:5px;}
-.line-link:hover span{width: 100px;margin-right:20px;}
+.line-link:hover, .line-link.active{padding-right:5px;}
+.line-link:hover span, .line-link.active span{width: 100px;margin-right:20px;}
 a.line-link, 
 a.line-link:visited, 
 a.line-link:hover, 
@@ -39,6 +39,10 @@ a.line-link:active{
   color: #000;
   text-decoration: none;
 }
+
+/*inital line 0*/
+.line-link.start0 span{width:0px;}
+.line-link.start0:hover span{width:65px;}
 
 
 /*with right on hover line link*/
@@ -54,5 +58,5 @@ a.line-link:active{
   margin-left:30px;
   width:0;
 }
-.line-lik.right:hover{padding-left:5px;}
-.line-link.right:hover span{width: 65px;margin-left:20px;}
+.line-link.right:hover, .line-link.right.active{padding-left:5px;}
+.line-link.right:hover span, .line-link.right.active span{width: 65px;margin-left:20px;}

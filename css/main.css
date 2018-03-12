@@ -28,6 +28,7 @@
    ========================================================================== */
 /*override bootstrap*/
 .text-muted{color:#999999;}
+hr.black{border-top: 1px solid #000;}
 .navbar-brand{padding:20px 15px 20px 40px;}
 .navbar-brand, .navbar-nav > li > a{text-shadow:none;}
 .navbar-fixed-top{z-index:99;}
@@ -116,12 +117,13 @@ body{
   width:100%;
   position:relative;
 }
-#main_menu{position:absolute;top:30px;right:0;z-index:1000;}
+#main_menu{position:fixed;top:30px;right:0;z-index:1000;}
 
 
 /*general*/
 a, a:visited, a:hover, a:active, a:focus{outline:0;color:#000;text-decoration:none;}
 img, embed, object, video{max-width: 100%;}
+img.fullwidth{width:100%;}
 h1{font-family: warnock-pro,serif;font-size: 42px;font-style: normal;font-weight: 500;text-align: center;}
 h1 span{position: relative; width:35px;margin-left:10px;}
 h1 span:before{content: "";position: absolute;border-bottom: 4px solid black;top: 20px;width: 35px;}
@@ -133,6 +135,10 @@ h3.header_title span{display:inline-block;width:45px;}
 
 h4{font-size: 12px; font-family: europa-regular;text-transform: uppercase;text-align: center;}
 
+ul{list-style-type: none;margin:0;padding:0;}
+
+.inline-block{display:inline-block;}
+.valign{position:relative;top:50%;transform: translateY(-50%);margin:0;}
 
 /*layout TODO: FOR min-width: 768px */
 .site-main{margin-top:50px;}
@@ -167,25 +173,14 @@ blockquote:before {
 }
 
 
-/*pages*/
-section{margin: 30px 0;}
-section.quote{
-  max-width:500px;
-  margin:30px auto;
-  text-align: justify;
-  line-height: 1.7em;
-}
-
-
 
 /*posts*/
-article{display:block;max-width:500px;margin:10px auto;padding:10px;text-align: center;}
+article{display:block;max-width:500px;margin:10px auto;padding:10px;text-align: center;position:relative;}
 article h3{font-family: warnock-pro,serif;font-size: 24px;margin:35px 0 20px;}
 article p{font-size:16px;text-align: justify;}
 
 .main-article{text-align: center;}
 .main-article h4{margin-top:35px;letter-spacing: 2px;font-weight:bold;}
-
 
 
 
