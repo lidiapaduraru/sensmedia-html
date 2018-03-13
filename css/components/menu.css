@@ -123,7 +123,8 @@
   height:2px;
   top: -5px;
 }
-
+#main_sidebar_menu .group1 .submenu{display:none;}
+#main_sidebar_menu .group1 a.big.active ~ .submenu{display:block;}
 
 #main_sidebar_menu .group23{min-width:490px;padding-top:100px;}
 #main_sidebar_menu ul.group4{min-width:250px;}
@@ -148,5 +149,43 @@
 .left-menu.bottom li{padding:5px 0;}
 .left-menu.bottom li a{text-transform: none;font-size:16px;font-weight:normal;}
 
+
+/* FILTER MENU */
+#filter_menu_toggle{position:absolute;top:30px;right:0;}
+#filter_menu {
+  text-align: right;
+  height: 100%;width: 0;
+  position: fixed;top:0;right:0;
+  z-index: 100;
+  /*background: rgba(255,255,255,0.5);*/
+  background:#FFFFFF;
+  overflow-x: hidden;
+  padding-top: 130px;
+  transition: 0.5s;
+}
+#filter_menu{
+  width:0;
+}
+#filter_menu.visible{
+  width:500px;
+}
+
+#main_filter_menu{padding-right:70px;}
+#main_filter_menu ul li{padding:0;margin:20px 0;}
+#main_filter_menu ul li a,
+#main_filter_menu ul li a:visited,
+#main_filter_menu ul li a:focus,
+#main_filter_menu ul li a:active{
+  font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:13px; font-weight: bold;
+  display:block;text-transform:uppercase;
+  padding-right:30px;
+  background: url('../../img/icons/check_off.png') no-repeat scroll center right;
+}
+#main_filter_menu ul li a:active,
+#main_filter_menu ul li a.focus,
+#main_filter_menu ul li a.active{
+  background: url('../../img/icons/check_on.png') no-repeat scroll center right;
+}
 
 

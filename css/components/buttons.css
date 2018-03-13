@@ -5,7 +5,7 @@
 /*  margin-left:25px;*/
   padding:5px 0px;
   padding-right:30px;
-  background: rgba(255,255,255,.5);
+  background: rgba(255,255,255,.8);
   font-family: europa-regular;
   font-size: 12px;font-style: bold;font-weight: 700;text-transform: uppercase;
   white-space: nowrap;
@@ -42,7 +42,7 @@ a.line-link:active{
 
 /*inital line 0*/
 .line-link.start0 span{width:0px;}
-.line-link.start0:hover span{width:65px;}
+.line-link.start0:hover span, .line-link.start0.active span{width:65px;}
 
 
 /*with right on hover line link*/

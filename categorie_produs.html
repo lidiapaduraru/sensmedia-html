@@ -45,7 +45,7 @@
       <li><a href="lectii_de_stil.html" class="line-link right big">lecții de stil <span></span></a></li>
       <li><a href="branduri_exclusive.html" class="line-link right big">colecția mea de branduri <span></span></a></li>
       <li>
-        <a href="magazin.html" class="line-link right big">magazin<span></span></a>
+        <a href="magazin.html" class="line-link right big active">magazin<span></span></a>
         <ul class="submenu hidden-lg">
           <li><a href="categorie_produs.html" class="line-link right">Costume <span></span></a></li>
           <li><a href="categorie_produs.html" class="line-link right">Cămăși <span></span></a></li>
@@ -78,20 +78,111 @@
 
 
 
-
-  <!--CONTENT-->
-  <div class="section">
-    <div class="slider-wrapper" style="background:#eee;min-height:600px;line-height:600px;text-align:center;">
-      <div class="container">
-        SLIDER
-      </div>
+  <!--==FILTER MENU===-->
+  <div id="filter_menu">
+    <a id="filter_menu_toggle" class="cd-nav-trigger nav-is-visible" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <div id="main_filter_menu">
+      <ul>
+        <li><a href="categorie_produs.html">Trends by Adina Buzatu <span></span></a></li>
+        <li><a href="categorie_produs.html">Eton <span></span></a></li>
+        <li><a href="categorie_produs.html">Magniani <span></span></a></li>
+        <li><a href="categorie_produs.html" class="active">Albert Thurston <span></span></a></li>
+        <li><a href="categorie_produs.html">Babette Wasserman <span></span></a></li>
+        <li><a href="categorie_produs.html">Derek Rose <span></span></a></li>
+        <li><a href="categorie_produs.html">DèPio <span></span></a></li>
+        <li><a href="categorie_produs.html">Bresciani <span></span></a></li>
+        <li><a href="categorie_produs.html">Borsalino <span></span></a></li>
+      </ul>
     </div>
   </div>
-  <!--/CONTENT-->
+  <!--/FILTER MENU-->
+
+
+
+  <div id="filter_button" class="fixed-right-top vertical-text"><a href="#" class="line-link"><span></span>FILTREAZĂ DUPĂ BRAND</a></div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3">
+        <div class="hidden-md hidden-sm hidden-xs">
+          <div class="menu-wrapper">
+            <h3>Magazin</h3>
+            <ul class="left-menu">
+              <li><a href="categorie_produs.html" class="line-link start0"><span></span>Costume</a></li>
+              <li><a href="categorie_produs.html" class="line-link start0"><span></span>Cămăși</a></li>
+              <li><a href="categorie_produs.html" class="line-link start0 active"><span></span>Pantofi</a></li>
+              <li><a href="categorie_produs.html" class="line-link start0"><span></span>Accesorii</a></li>
+              <li><a href="categorie_produs.html" class="line-link start0"><span></span>Cravate</a></li>
+            </ul>
+            <hr class="black" />
+            <ul class="left-menu bottom">
+              <li><a href="cosul_meu.html" class="line-link start0"><span></span>Coșul meu</a></li>
+              <li><a href="autentificare.html" class="line-link start0"><span></span>Autentificare</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-9">
+        <!--category posts-->
+        <section>
+          <div class="row grid">
+            <div class="col-lg-6 col-md-6 col-sm-12 grid-item">
+              <article class="product">
+                <a href="produs.html">
+                  <img src="./img/products/1.jpg" alt="">
+                  <h3>Grey Stretch Wool Suit</h3>
+                  <p class="price">650 RON</p>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 grid-item">
+              <article class="product">
+                <a href="produs.html">
+                  <img src="./img/products/2.jpg" alt="">
+                  <h3>Faconnable Wool Crewneck Sweater</h3>
+                  <p class="price">650 RON</p>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 grid-item">
+              <article class="product">
+                <a href="produs.html">
+                  <img src="./img/products/3.jpg" alt="">
+                  <h3>Black Piceno Jersey Pullover</h3>
+                  <p class="price">650 RON</p>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 grid-item">
+              <article class="product">
+                <a href="produs.html">
+                  <img src="./img/products/4.jpg" alt="">
+                  <h3>Product name</h3>
+                  <p class="price">650 RON</p>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!--/category posts-->
+      </div>
+
+
+    </div><!--/row-->
+  </div><!--/container-->
 
 
 
 
+
+
+<!--================//==============-->
 
 
   <div class="container">
@@ -113,6 +204,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/components/menu.js"></script>
+  <script src="js/vendor/masonry.pkgd.min.js"></script>
 
   </body>
 </html>
