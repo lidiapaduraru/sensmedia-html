@@ -177,6 +177,21 @@ blockquote:before {
   border-top:1px solid black;
 }
 
+.vertical-text{
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  -ms-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+}
+.fixed-right-top{position:fixed;right:10px;top:140px;z-index:100;}
+@media (min-width: 768px){ 
+  .fixed-right-top{right:40px;top:140px;}
+}
 
 
 /*posts*/
