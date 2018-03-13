@@ -188,7 +188,7 @@ blockquote:before {
   -webkit-transform-origin: right bottom;
   transform-origin: right bottom;
 }
-.fixed-right-top{position:fixed;right:10px;top:140px;z-index:100;}
+.fixed-right-top{position:fixed;right:10px;top:140px;z-index:99;}
 @media (min-width: 768px){ 
   .fixed-right-top{right:40px;top:140px;}
 }
