@@ -26,6 +26,21 @@ jQuery(document).ready(function(){
     $('#main_menu_toggle').fadeIn(1000);
   })
 
+  $('.btn.minus').on('click', function(event){
+    var s = parseInt($(this).next().val()) - 1
+    if(s < 0){
+      s = 0;
+    }
+    $(this).next().val(s)
+  });
+  $('.btn.plus').on('click', function(event){
+    $(this).prev().val(parseInt($(this).prev().val()) + 1)
+  });
+
+
+  $(document).ready(function(){ 
+    $(".select2").select2(); 
+  });
 
   $('.grid').masonry({
     itemSelector: '.grid-item'

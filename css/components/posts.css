@@ -43,4 +43,21 @@ article.product{margin: 0px auto 20px;}
 article.product h3{margin: 30px 0 5px;}
 article.product .price{font-size: 16px; font-family: europa-regular;text-align: center;}
 
-#filter_button{}
+/* MAGAZIN PREZENTARE PRODUS*/
+.single-product .product_description{
+  max-width: 500px;
+  height: 150px;
+  overflow-y: scroll;
+  line-height: 1.9em;
+  margin: 10px 0 10px;
+}
+.single-product .doc_link,.single-product .doc_link:visited{
+  font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+  text-decoration: none;
+  color: #777;
+  font-weight:normal;
+  display:inline-block;
+  border-bottom:1px solid #777;
+  margin: 10px 0;
+}
