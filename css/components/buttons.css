@@ -1,15 +1,84 @@
-/*with left line link*/
-.line-link{
-  position:relative;
+.btn-default,.btn-primary,.btn-success,.btn-info,.btn-warning,.btn-danger{
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn{
+  font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
   display: inline-block;
-/*  margin-left:25px;*/
-  padding:5px 0px;
-  padding-right:30px;
-  background: rgba(255,255,255,.8);
-  font-family: europa-regular;
-  font-size: 12px;font-style: bold;font-weight: 700;text-transform: uppercase;
+  padding: 10px 30px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.429;
+  text-align: center;
   white-space: nowrap;
   vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid black;
+      border-top-color: black;
+      border-right-color: black;
+      border-bottom-color: black;
+      border-left-color: black;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-default,
+.btn-default:active,
+.btn-default.active{
+  background-image: none;
+  background:#FFFFFF;
+  border-color: #000000;
+}
+.btn-default:hover,.btn-default:focus{
+  border-color: #000000;
+  background-color:#000000;
+  color:white;
+}
+.btn-lg{
+  padding: 15px 50px;
+  font-size: 12px;
+  line-height: 1.3333333;
+  border-radius: 0;
+}
+.btn-xlg{
+  padding: 20px 40px;
+}
+
+.btn-default.inverse,
+.btn-default.inverse:visited{
+  background: #000000;
+  color: #FFFFFF;
+}
+.btn-default.inverse:hover{
+  background: #FFFFFF;
+  color: #000000;
+}
+
+
+/*with left line link*/
+.line-link{
+  position: relative;
+  display: inline-block;
+  padding: 5px 0px;
+  padding-right: 30px;
+  background: rgba(255,255,255,.8);
+  font-family: europa-regular;
+  font-size: 12px;
+  font-style: bold;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   letter-spacing: 1.5px;
