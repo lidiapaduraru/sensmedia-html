@@ -188,4 +188,17 @@
   background: url('../../img/icons/check_on.png') no-repeat scroll center right;
 }
 
+#main_filter_menu.no-check{
+  padding-right: 20px;
+}
+#main_filter_menu.no-check ul li a,
+#main_filter_menu.no-check ul li a:visited,
+#main_filter_menu.no-check ul li a:active,
+#main_filter_menu.no-check ul li a.focus,
+#main_filter_menu.no-check ul li a.active{
+  background: none;
+  padding-right:none;
+}
+
+
 
