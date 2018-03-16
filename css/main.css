@@ -65,24 +65,71 @@ body{
 
 
 /*general*/
-a, a:visited, a:hover, a:active, a:focus{outline:0;color:#000;text-decoration:none;}
-img, embed, object, video{width:auto;max-width: 100%;}
-img.fullwidth{width:100%;}
-
-h1,h2,h3{
-  font-family: warnock-pro,serif;
+a, a:visited, a:hover, a:active, a:focus{
+  outline: 0;
+  color: #000;
+  text-decoration: none;
+}
+img, embed, object, video{
+  width: auto;
+  max-width: 100%;
+}
+img.fullwidth{
+  width: 100%;
 }
 
-h1{font-size: 42px;font-style: normal;font-weight: 500;text-align: center;}
-h1 span{position: relative; width:35px;margin-left:10px;}
-h1 span:before{content: "";position: absolute;border-bottom: 4px solid black;top: 20px;width: 35px;}
-h1 span:after{content:"\A";white-space: pre;}
+h1,h2,h3,
+.h1,.h2,.h3{
+  font-family: warnock-pro,serif;
+  line-height:1.15;
+}
 
-h3{font-size: 24px;}
+/* with right line and break line*/
+h1{
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+}
+h1 span{
+  position: relative; 
+  width:35px;
+  margin-left:10px;
+}
+h1 span:before{
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid black;
+  top: 20px;
+  width: 35px;
+}
+h1 span:after{
+  content:"\A";
+  white-space: pre;
+}
+
+h2,
+.h2{
+  font-size: 30px;
+}
+
+h3{
+  font-size: 24px;
+}
 
 /*fixed top position title - for large screen*/
-h3.header_title{font-family: warnock-pro-it,serif; font-style: normal;font-weight: normal;font-size: 24px; margin-top:35px;text-align: center;width:100%;}
-h3.header_title span{display:inline-block;width:45px;}
+h3.header_title{
+  font-family: warnock-pro-it,serif; font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  margin-top:35px;
+  text-align: center;
+  width: 100%;
+}
+h3.header_title span{
+  display: inline-block;
+  width: 45px;
+}
 @media (min-width: 768px){ 
   h3.header_title{
     position:fixed;
@@ -93,9 +140,19 @@ h3.header_title span{display:inline-block;width:45px;}
   }
 }
 
-h4{font-size: 12px; font-family: europa-regular;text-transform: uppercase;text-align: center;}
+h4, .h4{
+  font-size: 12px;
+  font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
 
 ul{list-style-type: none;margin:0;padding:0;}
+p{
+  line-height: 1.7em;
+}
 
 .inline-block{display:inline-block;}
 .block{display:block;}
@@ -159,7 +216,7 @@ article h3{font-family: warnock-pro,serif;font-size: 24px;margin:35px 0 20px;}
 article p{font-size:16px;text-align: justify;}
 
 .main-article{text-align: center;}
-.main-article h4{margin-top:35px;letter-spacing: 2px;font-weight:bold;}
+.main-article h4{margin-top:35px;}
 
 
 

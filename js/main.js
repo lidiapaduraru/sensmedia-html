@@ -42,8 +42,11 @@ jQuery(document).ready(function(){
     $(".select2").select2(); 
   });
 
-  $('.grid').masonry({
-    itemSelector: '.grid-item'
+  $msnry = $('.grid');
+  $msnry.imagesLoaded( function() {
+    $msnry.masonry({
+      itemSelector: '.grid-item'
+    });
   });
 
   $('.carousel').carousel();
