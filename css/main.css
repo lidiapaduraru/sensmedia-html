@@ -182,15 +182,21 @@ blockquote{
   margin:70px auto 50px;
   text-align:center;
   border-left: none;
+  max-width: 700px;
 }
 blockquote:before {
-  content : "";
-  position: absolute;
-  left: 40%;
-  top: -12px;
+  display: block;
+  clear: both;
+  content: "";
+  position: relative;
+  left: 0;
+  top: -20px;
+  max-width: 250px;
   height: 1px;
-  width: 200px;
-  border-top:1px solid black;
+  width: 50%;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;
+  padding: 0px;
 }
 
 .vertical-text{
@@ -231,6 +237,9 @@ footer{padding:30px 0;}
 @media (max-width: 767px){
   .block-xs{
     display: block !important;
+  }
+  h1{
+    font-size: 28px;
   }
 }
 
