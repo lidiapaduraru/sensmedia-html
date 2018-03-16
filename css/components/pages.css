@@ -4,6 +4,30 @@ section.quote{
   margin:30px auto;
 }
 
+.exclusive-brands-list{
+  width: 500px;
+  margin: 30px auto;
+  padding-left: 25px;
+}
+.exclusive-brands-list li{
+  margin: 22px 0;
+  text-align: center;
+}
+.exclusive-brands-list li a,
+.exclusive-brands-list li a:visited,
+.exclusive-brands-list li a:hover,
+.exclusive-brands-list li a:focus,
+.exclusive-brands-list li a:active{
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  display:block;
+  padding:0px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /*contact page*/
 .contact-social-item{
   margin-top: 50px;
@@ -21,3 +45,4 @@ section.quote{
     margin-bottom: 10px;
   }
 }
+
