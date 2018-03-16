@@ -1,8 +1,23 @@
 /*pages*/
 section.quote{
-  max-width:500px;
+  max-width:530px;
   margin:30px auto;
-  text-align: justify;
-  line-height: 1.7em;
 }
 
+/*contact page*/
+.contact-social-item{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contact-social-item .h4{
+  font-size:13px;
+}
+.contact-social-item .h2{
+  font-family: warnock-pro-it, serif;
+}
+@media (min-width: 768px){ 
+  .contact-social-item{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+}
