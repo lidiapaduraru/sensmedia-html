@@ -26,6 +26,37 @@ jQuery(document).ready(function(){
     $('#main_menu_toggle').fadeIn(1000);
   })
 
+  $('#auth_button').on('click', function(event){
+    event.preventDefault();
+    $('#auth_menu').addClass('visible');
+    $('#auth_register').show();
+    $('#auth_reset').hide();
+    $('#main-overlay').show();
+    $('#main_menu_toggle').hide();
+  });
+  $('#auth_menu_toggle').on('click', function(event){
+    $('#auth_menu').removeClass('visible');
+    $('#main-overlay').hide();
+    $('#main_menu_toggle').fadeIn(1000);
+  });
+  $('#forgot_password').on('click', function(event){
+    event.preventDefault();
+    $('#auth_register').hide();
+    $('#auth_reset').show();
+  });
+
+  $('#auth_button').on('click', function(event){
+    event.preventDefault();
+    $('#auth_menu').addClass('visible');
+    $('#main-overlay').show();
+    $('#main_menu_toggle').hide();
+  });
+  $('#auth_menu_toggle').on('click', function(event){
+    $('#auth_menu').removeClass('visible');
+    $('#main-overlay').hide();
+    $('#main_menu_toggle').fadeIn(1000);
+  })
+
   $('.btn.minus').on('click', function(event){
     var s = parseInt($(this).next().val()) - 1
     if(s < 0){
@@ -42,9 +73,9 @@ jQuery(document).ready(function(){
     $(".select2").select2(); 
   });
 
-  $msnry = $('.grid');
-  $msnry.imagesLoaded( function() {
-    $msnry.masonry({
+  var msnry = $('.grid');
+  msnry.imagesLoaded( function() {
+    msnry.masonry({
       itemSelector: '.grid-item'
     });
   });

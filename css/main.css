@@ -83,6 +83,14 @@ h1,h2,h3,
   font-family: warnock-pro,serif;
   line-height:1.15;
 }
+h1.cursive,h2.cursive,h3.cursive,
+.h1.cursive,.h2.cursive,.h3.cursive{
+  font-family: warnock-pro-it, serif;
+}
+h1.cursive,h2.cursive,h3.cursive,
+.h1.cursive,.h2.cursive,.h3.cursive{
+  font-family: warnock-pro-it;
+}
 
 /* with right line and break line*/
 h1{
@@ -158,15 +166,16 @@ p{
 .block{display:block;}
 .valign{position:relative;top:50%;transform: translateY(-50%);margin:0;}
 
-.m-t-large{margin-top:35px;}
-.m-t-med{margin-top:25px;}
-.m-t-small{margin-top:15px;}
-.m-b-large{margin-bottom:35px;}
-.m-b-med{margin-bottom:25px;}
-.m-b-small{margin-bottom:15px;}
+.m-t-large{margin-top: 35px;}
+.m-t-med{margin-top: 25px;}
+.m-t-small{margin-top: 15px;}
+.m-t-xs{margin-top: 5px;}
+.m-b-large{margin-bottom: 35px;}
+.m-b-med{margin-bottom: 25px;}
+.m-b-small{margin-bottom: 15px;}
 
 
-.site-main{margin-top:50px;}
+.site-main{margin-top: 50px;}
 
 section{margin: 30px 0;}
 
@@ -240,6 +249,9 @@ footer{padding:30px 0;}
   }
   h1{
     font-size: 28px;
+  }
+  h2,.h2{
+    font-size: 26px;
   }
 }
 

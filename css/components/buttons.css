@@ -38,7 +38,9 @@
   background:#FFFFFF;
   border-color: #000000;
 }
-.btn-default:hover,.btn-default:focus{
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active{
   border-color: #000000;
   background-color:#000000;
   color:white;
