@@ -1,7 +1,7 @@
 .form-group{
   margin-bottom: 50px;
 }
-.form-group a{
+.form-group a, .form-group.min{
   margin-bottom:20px;
 }
 
@@ -86,6 +86,7 @@ input.qty, .minus, .plus{
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
 
 
 @media (max-width: 767px){

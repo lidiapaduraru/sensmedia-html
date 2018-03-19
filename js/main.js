@@ -68,6 +68,10 @@ jQuery(document).ready(function(){
     $(this).prev().val(parseInt($(this).prev().val()) + 1)
   });
 
+  $(".contulmeu_selector_wrapper li a").on('click', function(event){
+    event.preventDefault();
+    $("#dropdownSelectAcc").html('<div class="line-link start0 active"><span></span>' + $(this).text()+' </div>');
+  });
 
   $(document).ready(function(){ 
     $(".select2").select2(); 
@@ -78,6 +82,10 @@ jQuery(document).ready(function(){
     msnry.masonry({
       itemSelector: '.grid-item'
     });
+  });
+
+  $(document).on('click.bs.collapse.data-api', '[data-toggle=collapse]', function(e) {
+    return $(document).find('.collapse.in').collapse('hide');
   });
 
   $('.carousel').carousel();
