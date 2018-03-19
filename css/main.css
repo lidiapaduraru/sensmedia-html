@@ -226,12 +226,30 @@ blockquote:before {
 
 
 /*posts*/
-article{display:block;max-width:500px;margin:10px auto;padding:10px;text-align: center;position:relative;}
-article h3{font-family: warnock-pro,serif;font-size: 24px;margin:35px 0 20px;}
-article p{font-size:16px;text-align: justify;}
+article{
+  display: block;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+article h3{
+  font-family: warnock-pro,serif;
+  font-size: 24px;
+  margin: 35px 0 20px;
+}
+article p{
+  font-size: 16px;
+  text-align: justify;
+}
 
-.main-article{text-align: center;}
-.main-article h4{margin-top:35px;}
+.main-article{
+  text-align: center;
+}
+.main-article h4{
+  margin-top: 35px;
+}
 
 
 
@@ -252,6 +270,15 @@ footer{padding:30px 0;}
   }
   h2,.h2{
     font-size: 26px;
+  }
+  #socials li{
+    padding: 5px 0;
+  }
+  .navbar-brand{
+    padding-left: 20px;
+  }
+  .navbar-brand img{
+    width: 50px;
   }
 }
 
