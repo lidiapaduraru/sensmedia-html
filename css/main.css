@@ -70,6 +70,16 @@ a, a:visited, a:hover, a:active, a:focus{
   color: #000;
   text-decoration: none;
 }
+
+a.text-muted,
+a.text-muted:visited,
+a.text-muted:hover,
+a.text-muted:active,
+a.text-muted:focus{
+  text-decoration: underline;
+}
+
+
 img, embed, object, video{
   width: auto;
   max-width: 100%;

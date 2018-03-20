@@ -10,6 +10,7 @@ label{
   font-size: 12px;
   text-transform: uppercase;
   padding: 3px 0 5px;
+  letter-spacing: 2px;
 }
 
 
@@ -22,7 +23,7 @@ input{
   min-height: 35px;
   line-height: 35px;
   padding: 0 12px 0 0;
-  font-size: 13px;
+  font-size: 15px;
   border: 0;
   border-bottom: 1px solid #999;
   display: inline-block;
@@ -43,13 +44,43 @@ input.qty, .minus, .plus{
   vertical-align: top;
 }
 
+/* radio */
+input[type="radio"]{
+  margin:0;padding:0;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  display: inline-block;
+  width: 20px;
+  height: 21px;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: 5px;
+  border-bottom: 0;
+  border-radius: 0;
+  background: url('../../img/icons/check_off.png') no-repeat scroll bottom left transparent;
+}
+input[type="radio"]:checked{
+  background: url('../../img/icons/check_on.png') no-repeat scroll bottom left transparent;
+}
+label.ck{
+  white-space: nowrap;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+label.ck .visa{
+  position: relative;
+  top: -3px;
+}
+
 .select2{
   min-width: 165px;
   font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
 }
 .select2-results__option{
   font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.select2.small{
   font-size: 12px;
 }
 .select2-container *:focus{
@@ -72,8 +103,8 @@ input.qty, .minus, .plus{
 }
 .select2-container .select2-selection--single .select2-selection__rendered{
   padding-left: 0;
-  font-weight: bold;
 }
+
 .select2-container--default .select2-selection--single .select2-selection__arrow{
   height: 20px;
 }

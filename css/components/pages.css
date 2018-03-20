@@ -219,6 +219,28 @@ section.quote.wide{
   padding: 10px 0px;
 }
 
+/* detalii livrare */
+.h3.toggle_collapse{
+  display:block;
+  font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-bottom: 15px;
+  position: relative;
+  left: -20px;
+}
+.h3.toggle_collapse.m-b-none{
+  margin-bottom: 0;
+}
+.h3.toggle_collapse:before{
+  display: inline-block;
+  content: "-";
+  width: 15px;
+  margin-right:5px;
+  text-align: left;
+}
+.h3.toggle_collapse.collapsed:before{
+  content: "+";
+}
+
 /* general queries*/
 @media (max-width: 767px){
   section.quote.wide{

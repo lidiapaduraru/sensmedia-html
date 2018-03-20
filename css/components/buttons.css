@@ -45,6 +45,11 @@
   background-color:#000000;
   color:white;
 }
+.btn-default:disabled,
+.btn-default[disabled]{
+  background-color: #FFFFFF;
+}
+
 .btn-lg{
   padding: 15px 50px;
   font-size: 12px;
