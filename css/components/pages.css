@@ -341,6 +341,23 @@ input.search{
   }
 }
 
+/* 404 */
+.page_404{
+  margin: 20px auto;
+}
+.page_404 h1{
+  font-size: 142px;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+.page_404 p{
+  line-height: 1em;
+  margin-top: 0;
+  position: relative;
+  top: -10px;
+}
+
+
 
 /* general queries*/
 @media (max-width: 767px){
