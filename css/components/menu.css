@@ -251,24 +251,24 @@
 #filter_menu {
   text-align: right;
   height: 100%;
-  width: 0;
+  width: auto;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -400px;
   z-index: 100;
   background: #FFFFFF;
   overflow: auto;
-  padding-top: 110px;
+  padding: 110px 0 0;
   transition: 0.5s;
 }
-#filter_menu{
-  width:0;
-}
 #filter_menu.visible{
-  width:500px;
+  right: 0;
 }
 
-#main_filter_menu{padding-right:70px;}
+#main_filter_menu{
+  padding-right: 70px;
+  padding-left: 70px;
+}
 #main_filter_menu ul li{padding:0;margin:20px 0;}
 #main_filter_menu ul li a,
 #main_filter_menu ul li a:visited,
