@@ -8,18 +8,10 @@
 }
 @font-face {
     font-family: europa-regular;
-    /*src: url('./fonts/europa-regular.woff');*/
     src: url('../fonts/apercu-regular.woff');
 }
 
-/*@font-face {
-    font-family: europa-regular;
-    src: url('./fonts/apercu-regular.woff');
-}*/
-/*@font-face {
-    font-family: apercu-bold;
-    src: url('./fonts/apercu-bold.woff');
-}*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&subset=latin-ext');
 
 
 
