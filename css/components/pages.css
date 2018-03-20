@@ -180,12 +180,53 @@ section.quote.wide{
   margin: 10px 0;
 }
 
-
+/* cosul meu */
+.basket-item{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+.basket-item .vert_sp{
+  margin: 10px 0;
+}
+.basket-item:after{
+  display: block;
+  clear: both;
+  content: "";
+  position: relative;
+  left: 10%;
+  bottom: -10px;
+  width: 90%;
+  height: 1px;
+  border-bottom: 1px solid #AAA;
+  padding: 0px;
+}
+.delete_products{
+  display: block;
+  background: url('../../img/icons/close_small.png') no-repeat scroll center center;
+  height: 20px;
+  width: 20px;
+}
+.total_cos{
+  position: relative;
+  top: -10px;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 10px;
+  font-family: 'europa-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.total_cos td{
+  padding: 10px 0px;
+}
 
 /* general queries*/
 @media (max-width: 767px){
   section.quote.wide{
     margin-left: -15px;
     margin-right: -15px;
+  }
+  .basket-item:after{
+    left: 0;
+    width: 100%;
   }
 }

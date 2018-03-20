@@ -79,15 +79,14 @@
 <!--==============================-->
 
 
-  <h3 class="header_title">Magazin<span></span></h3>
+<h3 class="header_title hidden-lg hidden-md">Coșul meu<span></span></h3>
 
   <div class="container">
     <div class="row">
 
       <div class="col-lg-3">
         <div class="hidden-md hidden-sm hidden-xs">
-          <div class="menu-wrapper">
-            <h3>Magazin</h3>
+            <h2 class="cursive m-b-med">Magazin</h2>
             <ul class="left-menu">
               <li><a href="categorie_produs.html" class="line-link start0"><span></span>Costume</a></li>
               <li><a href="categorie_produs.html" class="line-link start0"><span></span>Cămăși</a></li>
@@ -98,71 +97,81 @@
             <hr class="black" />
             <ul class="left-menu bottom">
               <li><a href="contul_meu.html" class="line-link start0"><span></span>Contul meu</a></li>
-              <li><a href="cosul_meu.html" class="line-link start0"><span></span>Coșul meu</a></li>
+              <li><a href="cosul_meu.html" class="line-link start0 active"><span></span>Coșul meu</a></li>
               <li><a href="autentificare.html" class="line-link start0"><span></span>Autentificare</a></li>
             </ul>
-          </div>
         </div>
       </div>
 
-      <div class="col-lg-9">
+      <div class="col-lg-8">
 
-          <article class="post sticky">
-            <div class="post-thumbnail">
-              <img src="./img/pages/tinutele_adinei/2.jpg" alt="" class="fullwidth">
-            </div>
-            <div class="entry-content">
-              <div class="valign">
-                <h3>Product name vivamus posuere mi sit.</h3>
-                <a href="produs.html" class="line-link"><span></span>cumpara acum</a>
+        <div class="row">
+          <div class="col-sm-11 col-sm-offset-1 hidden-sm hidden-xs">
+            <h3 class="cursive m-b-med h2line">Coșul meu</h3>
+          </div>
+        </div>
+
+        <div class="row basket-item hidden-xs">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4"><label>Produse</label></div>
+          <div class="col-sm-3"><label>Cantitate</label></div>
+          <div class="col-sm-2"><label>Preț unitar</label></div>
+          <div class="col-sm-2"><label>Preț total</label></div>
+        </div>
+        <!--items-->
+        <div class="row basket-item">
+            <div class="col-sm-1 col-xs-1 vert_sp"><a href="#" class="delete_products"></a></div>
+            <div class="col-sm-4 col-xs-10 vert_sp">Nume produs</div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="btn-grup block" data-toggle="buttons">
+                <label class="btn btn-default minus"> - </label>
+                <input type="text" name="cantitate" value="1" class="qty"/>
+                <label class="btn btn-default plus"> + </label>
               </div>
             </div>
-          </article>
-
-          <article class="post sticky right">
-            <div class="post-thumbnail">
-              <img src="./img/pages/tinutele_adinei/3.jpg" alt="" class="fullwidth">
-            </div>
-            <div class="entry-content">
-              <div class="valign">
-                <h3>Product name vivamus posuere mi sit.</h3>
-                <a href="produs.html" class="line-link"><span></span>cumpara acum</a>
+            <div class="col-sm-2 col-xs-6 vert_sp">50 RON</div>
+            <div class="col-sm-2 col-xs-6 vert_sp">100 RON</div>
+        </div>
+        <div class="row basket-item">
+            <div class="col-sm-1 col-xs-1 vert_sp"><a href="#" class="delete_products"></a></div>
+            <div class="col-sm-4 col-xs-10 vert_sp">Nume produs</div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="btn-grup block" data-toggle="buttons">
+                <label class="btn btn-default minus"> - </label>
+                <input type="text" name="cantitate" value="1" class="qty"/>
+                <label class="btn btn-default plus"> + </label>
               </div>
             </div>
-          </article>
+            <div class="col-sm-2 col-xs-6 vert_sp">50 RON</div>
+            <div class="col-sm-2 col-xs-6 vert_sp">100 RON</div>
+        </div>
+        <!--/items-->
 
-          <article class="post sticky">
-            <div class="post-thumbnail">
-              <img src="./img/pages/tinutele_adinei/2.jpg" alt="" class="fullwidth">
-            </div>
-            <div class="entry-content">
-              <div class="valign">
-                <h3>Product name vivamus posuere mi sit.</h3>
-                <a href="produs.html" class="line-link"><span></span>cumpara acum</a>
-              </div>
-            </div>
-          </article>
-
-          <div id="magazin_detalii_plati">
-            <div class="row">
-              <div class="col-md-6 col-sm-6">
-                <div class="item">
-                  <h3>Detalii de livrare</h3>
-                  <p>Suspendisse ullamcorper elit non sapien pellentesque, at venenatis.</p>
+        <!--second section-->
+        <section class="m-t-large">
+          <div class="row">
+            <div class="col-sm-11 col-sm-offset-1 m-t-large">
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="block">Cod promoțional</label>
+                    <input type="text" name="promo" placeholder="cod promo">
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-6 vcenter">
-                <div class="item">
-                  <h3>Plăți sigure</h3>
-                  <p>Suspendisse ullamcorper elit non sapien pellentesque, at venenatis.</p>
+                <div class="col-md-6">
+                  <table class="total_cos">
+                    <tr><td><strong>Preț produse</strong></td><td class="text-right">176 RON</td></tr>
+                    <tr><td><strong>Transport</strong></td><td class="text-right">35 RON</td></tr>
+                    <tr><td><strong>Total</strong></td><td class="text-right">211 RON</td></tr>
+                  </table>
+                  <a class="btn btn-default btn-xlg m-t-large"> Continuă </a>
                 </div>
               </div>
             </div>
           </div>
-
-
+        </section>
+        <!--/second section-->
       </div>
-
 
     </div><!--/row-->
   </div><!--/container-->
@@ -194,6 +203,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/components/menu.js"></script>
+  <script src="js/vendor/select2.min.js"></script>
   <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
   <script src="js/vendor/masonry.pkgd.min.js"></script>
 
