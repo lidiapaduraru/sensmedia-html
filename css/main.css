@@ -8,18 +8,10 @@
 }
 @font-face {
     font-family: europa-regular;
-    /*src: url('./fonts/europa-regular.woff');*/
     src: url('../fonts/apercu-regular.woff');
 }
 
-/*@font-face {
-    font-family: europa-regular;
-    src: url('./fonts/apercu-regular.woff');
-}*/
-/*@font-face {
-    font-family: apercu-bold;
-    src: url('./fonts/apercu-bold.woff');
-}*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&subset=latin-ext');
 
 
 
@@ -61,8 +53,17 @@ body{
   width:100%;
   position:relative;
 }
-#main_menu{position:fixed;top:30px;right:0;z-index:1000;}
-
+#main_menu{
+  position: fixed;
+  top: 20px;
+  right: 0;
+  z-index: 1000;
+}
+@media (min-width: 768px){
+  #main_menu{
+    top: 30px;
+  }
+}
 
 /*general*/
 a, a:visited, a:hover, a:active, a:focus{
@@ -137,11 +138,15 @@ h3{
 
 /*fixed top position title - for large screen*/
 h3.header_title{
+  position:fixed;
+  top: 0;
+  left: 0;
+  margin-top: 35px;
+  margin-bottom: 0;
+  z-index: 100;
   font-family: 'warnock-pro-it', serif;
   font-weight: normal;
-  font-size: 24px;
-  margin-top:10px;
-  margin-bottom: 45px;
+  font-size: 20px;
   text-align: center;
   height: 1px;
   overflow: visible;
@@ -159,6 +164,7 @@ h3.header_title span{
     margin-top:35px;
     margin-bottom: 0;
     z-index:100;
+    font-size: 24px;
   }
 }
 
