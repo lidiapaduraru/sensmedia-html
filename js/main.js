@@ -91,4 +91,26 @@ jQuery(document).ready(function(){
   $('.carousel').carousel();
 
 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $('#gotop_button').fadeIn();
+    } else {
+      $('#gotop_button').fadeOut();
+    }
+  });
+  $('#gotop_button').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 800);
+    return false;
+  });
+
+
+
+
+
+
+
+
+
 });

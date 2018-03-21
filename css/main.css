@@ -47,7 +47,7 @@ body{
 }
 .navbar{
   background: rgba(255,255,255,.88);
-  min-height: 110px;
+  min-height: 88px;
 }
 .navbar-header{
   width:100%;
@@ -60,6 +60,9 @@ body{
   z-index: 1000;
 }
 @media (min-width: 768px){
+  .navbar{
+    min-height: 110px;
+  }
   #main_menu{
     top: 30px;
   }
@@ -259,12 +262,28 @@ blockquote:before {
 }
 .fixed-right-top{
   position: fixed;
-  right: 30px;
-  top: 120px;
+  right: 20px;
+  top: 80px;
   z-index: 99;
 }
+.fixed-right-bottom{
+  position: fixed;
+  right: 20px;
+  bottom: 180px;
+  z-index: 99;
+}
+#gotop_button{
+  display: none;
+}
 @media (min-width: 768px){ 
-  .fixed-right-top{right:40px;top:140px;}
+  .fixed-right-top{
+    right: 39px;
+    top: 140px;
+  }
+  .fixed-right-bottom{
+    right: 39px;
+    bottom: 170px;
+  }
 }
 
 
