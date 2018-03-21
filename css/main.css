@@ -47,7 +47,7 @@ body{
 }
 .navbar{
   background: rgba(255,255,255,.88);
-  min-height: 110px;
+  min-height: 88px;
 }
 .navbar-header{
   width:100%;
@@ -60,6 +60,9 @@ body{
   z-index: 1000;
 }
 @media (min-width: 768px){
+  .navbar{
+    min-height: 110px;
+  }
   #main_menu{
     top: 30px;
   }
@@ -259,7 +262,7 @@ blockquote:before {
 }
 .fixed-right-top{
   position: fixed;
-  right: 30px;
+  right: 20px;
   top: 120px;
   z-index: 99;
 }

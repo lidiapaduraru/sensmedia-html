@@ -1,12 +1,57 @@
-.carousel{
-  margin-top: 20px;
+
+/*carousel-simple*/
+.carousel.carousel-simple .item img{
+  margin: 0 auto;
 }
-.carousel .item{
-  min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+.carousel.carousel-simple .carousel-control,
+.carousel.carousel-simple .carousel-control:hover, 
+.carousel.carousel-simple .carousel-control:focus{
+  opacity: 1;
 }
-.carousel .item img{
-  margin: 0 auto; /* Align slide image horizontally center */
+.carousel.carousel-simple .carousel-control.left,
+.carousel.carousel-simple .carousel-control.right{
+  background: none;
 }
-.bs-example{
-  margin: 20px;
+.carousel.carousel-simple .carousel-control.left .prev,
+.carousel.carousel-simple .carousel-control.right .next{
+  position: absolute;
+  bottom: 19px;
+  color: #000;
+  text-shadow: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  display: inline-block;
+}
+.carousel.carousel-simple .carousel-control.left .prev{
+  left: 0;
+  text-align: left;
+  padding-left: 20px;
+  background: url('../../img/icons/thin_arrow_left.png') no-repeat scroll center left #FFFFFF;
+}
+.carousel.carousel-simple .carousel-control.right .next{
+  right: 0;
+  text-align: right;
+  padding-right: 20px;
+  background: url('../../img/icons/thin_arrow_right.png') no-repeat scroll center right #FFFFFF;
+}
+
+.carousel.carousel-simple .carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  font-size: 13px;
+  color: #999;
+  bottom: 0;
+  padding: 23px 0 18px;
+  z-index: 10;
+  text-shadow: none;
+  font-weight: normal;
+  border-bottom: 1px solid #DDD;
+  min-height: 60px;
+  width: 100%;
+}
+.carousel.carousel-simple .carousel-caption strong{
+  color: #000;
 }
