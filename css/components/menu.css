@@ -112,7 +112,11 @@
     width: 500px;
     padding-right: 45px;
   }
-
+}
+@media (max-device-width: 568px){
+  #main_sidebar_menu.visible{
+    width: 100%;
+  }
 }
 
 #main_sidebar_menu a{
@@ -148,7 +152,7 @@
 #main_sidebar_menu .group4{
   min-width:250px;
   margin-right: 45px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 #main_sidebar_menu .group4 .follow{
   font-family: 'europa-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -170,6 +174,8 @@
 
 #main_sidebar_menu ul.group2{
   display: block;
+  position: relative;
+  top: 30px;
 }
 #main_sidebar_menu ul.group2 li a{
   padding: 10px 4px;
@@ -177,6 +183,8 @@
 #main_sidebar_menu ul.group3{
   display: block;
   margin-left: 10px;
+  position: relative;
+  top: -30px;
 }
 #main_sidebar_menu ul.group3 li a{
   padding-left: 10px;
@@ -197,9 +205,13 @@
   #main_sidebar_menu ul.group2{
     display: inline-block;
     margin-right: 0;
+    position: relative;
+    top: 0;
   }
   #main_sidebar_menu ul.group3{
     display: inline-block;
+    position: relative;
+    top: 0;
   }
 }
 
