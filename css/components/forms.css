@@ -63,6 +63,10 @@ input[type="radio"]{
 input[type="radio"]:checked{
   background: url('../../img/icons/check_on.png') no-repeat scroll bottom left transparent;
 }
+input.input_go{
+  padding-right: 20px;
+  background: url('../../img/icons/thin_arrow_right.png') no-repeat scroll center right transparent;
+}
 label.ck{
   white-space: nowrap;
   margin-bottom: 0;
