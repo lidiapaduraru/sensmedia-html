@@ -26,6 +26,18 @@ jQuery(document).ready(function(){
     $('#main_menu_toggle').fadeIn(1000);
   })
 
+  $('.cos_button').on('click', function(event){
+    event.preventDefault();
+    $('#cos_menu').addClass('visible');
+    $('#main-overlay').show();
+    $('#main_menu_toggle').hide();
+  });
+  $('#cos_menu_toggle').on('click', function(event){
+    $('#cos_menu').removeClass('visible');
+    $('#main-overlay').hide();
+    $('#main_menu_toggle').fadeIn(1000);
+  })
+
   $('#auth_button').on('click', function(event){
     event.preventDefault();
     $('#auth_menu').addClass('visible');
