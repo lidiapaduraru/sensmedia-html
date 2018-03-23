@@ -255,16 +255,16 @@ ul.page-menu{
 }
 .page-menu li a:hover,
 .page-menu li a:focus,
+.page-menu li a:active,
 .page-menu li a.active{
   color: #000;
-}
-.page-menu li a.active{
   font-weight: bold;
 }
 
 /* page-template */
 .page-main-content{
   margin-top: 25px;
+  margin-bottom: 300px;
 }
 .page-main-content h4,
 .page-main-content .h4{

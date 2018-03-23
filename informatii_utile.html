@@ -87,29 +87,31 @@
       <div class="col-lg-3">
         <h3 class="cursive">Informații utile</h3>
         <ul class="page-menu">
-          <li><a href="#" class="active">Despre noi</a></li>
-          <li><a href="#">Întrebări frecvente</a></li>
-          <li><a href="#">Ghid de mărimi</a></li>
-          <li><a href="#">Modalități de plată</a></li>
-          <li><a href="#">Informații despre livrare</a></li>
-          <li><a href="#">Politica de retur</a></li>
+          <li><a class="go_toggle active" href="#toggle_0" data-toggle="collapse" area-expanded="true">Despre noi</a></li>
+          <li><a class="go_toggle" href="#toggle_1" data-toggle="collapse">Întrebări frecvente</a></li>
+          <li><a class="go_toggle" href="#toggle_2" data-toggle="collapse">Ghid de mărimi</a></li>
+          <li><a class="go_toggle" href="#toggle_3" data-toggle="collapse">Modalități de plată</a></li>
+          <li><a class="go_toggle" href="#toggle_4" data-toggle="collapse">Informații despre livrare</a></li>
+          <li><a class="go_toggle" href="#toggle_5" data-toggle="collapse">Politica de retur</a></li>
         </ul>
       </div>
 
       <div class="col-lg-8">
         <div class="page-main-content">
-          <h4>Despre noi</h4>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper turpis vel risus lobortis, ac sollicitudin urna tincidunt. Aliquam odio enim, ultrices non ornare et, finibus at dolor.</p>
-          <p>Nunc leo augue, finibus id dui volutpat, consectetur auctor felis. Duis hendrerit est vel turpis eleifend, et posuere mauris fringilla. Duis in purus suscipit, placerat lectus vitae, porttitor mi</p>
-          <h5>Cras et ullamcorper dui</h5>
-          <p>Quisque varius augue sed nibh imperdiet, a dapibus risus accumsan. Ut eget tellus a urna vulputate scelerisque eget ut tortor. Donec tincidunt ante in leo tincidunt, ac sodales leo efficitur.</p>
-          <p>Phasellus aliquet est dui, non elementum est imperdiet non. Nullam metus odio, rhoncus venenatis tincidunt imperdiet, placerat non sem.</p>
-          <ul class="list">
-            <li>In ullamcorper turpis vel risus lobortis, ac sollicitudin urna tincidunt.</li>
-            <li>Nullam metus odio, rhoncus venenatis tincidunt imperdiet</li>
-            <li>Ut eget tellus a urna vulputate scelerisque eget ut tortor.</li>
-          </ul>
+        <a href="#toggle_0" data-toggle="collapse" role="button" aria-expanded="true" class="h4 toggle_collapse">Despre noi</a>
+        <div id="toggle_0" class="toggle_content collapse in m-b-large">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper turpis vel risus lobortis, ac sollicitudin urna tincidunt. Aliquam odio enim, ultrices non ornare et, finibus at dolor.</p>
+            <p>Nunc leo augue, finibus id dui volutpat, consectetur auctor felis. Duis hendrerit est vel turpis eleifend, et posuere mauris fringilla. Duis in purus suscipit, placerat lectus vitae, porttitor mi</p>
+            <h5>Cras et ullamcorper dui</h5>
+            <p>Quisque varius augue sed nibh imperdiet, a dapibus risus accumsan. Ut eget tellus a urna vulputate scelerisque eget ut tortor. Donec tincidunt ante in leo tincidunt, ac sodales leo efficitur.</p>
+            <p>Phasellus aliquet est dui, non elementum est imperdiet non. Nullam metus odio, rhoncus venenatis tincidunt imperdiet, placerat non sem.</p>
+            <ul class="list">
+              <li>In ullamcorper turpis vel risus lobortis, ac sollicitudin urna tincidunt.</li>
+              <li>Nullam metus odio, rhoncus venenatis tincidunt imperdiet</li>
+              <li>Ut eget tellus a urna vulputate scelerisque eget ut tortor.</li>
+            </ul>
+          </div>
 
           <a href="#toggle_1" data-toggle="collapse" role="button" aria-expanded="false" class="h4 toggle_collapse collapsed">Intrebări frecvente</a>
           <div id="toggle_1" class="toggle_content collapse m-b-large">
@@ -136,6 +138,10 @@
             <p>Phasellus aliquet est dui, non elementum est imperdiet non. Nullam metus odio, rhoncus venenatis tincidunt imperdiet.</p>
           </div>
 
+          <a href="#toggle_5" data-toggle="collapse" role="button" aria-expanded="false" class="h4 toggle_collapse collapsed">Politica de retur</a>
+          <div id="toggle_5" class="toggle_content collapse m-b-large">
+            <p>Phasellus aliquet est dui, non elementum est imperdiet non. Nullam metus odio, rhoncus venenatis tincidunt imperdiet.</p>
+          </div>
 
         </div>
       </div>
