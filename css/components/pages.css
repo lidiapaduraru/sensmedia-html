@@ -358,6 +358,29 @@ input.search{
 }
 
 
+/*article hover animations*/
+.a_wrapp{
+  display: inline-block;
+  overflow: hidden;
+}
+.a_grow, .a_up{
+  -webkit-transition: all .6s ease-out;
+     -o-transition: all .6s ease-out;
+        transition: all .6s ease-out;
+}
+.a_anim:hover .a_grow, .a_grow:hover{
+  -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+     -o-transform: scale(1.04);
+        transform: scale(1.04);
+}
+.a_anim .a_up{
+  position: relative;
+  top: 0;
+}
+.a_anim:hover .a_up{
+  top: -8px;
+}
 
 /* general queries*/
 @media (max-width: 767px){
