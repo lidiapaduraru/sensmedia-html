@@ -35,10 +35,9 @@ jQuery(document).ready(function(){
     event.preventDefault();
     $('.go_toggle').removeClass('active');
     $(this).addClass('active');
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top +150
-    }, 500);
-    return false;
+    // $('html, body').animate({
+    //     scrollTop: $($.attr(this, 'href')).offset().top +150
+    // }, 500);
   });
 
   $('.carousel').carousel();

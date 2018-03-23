@@ -1,17 +1,36 @@
+@import url("https://use.typekit.net/akg4amu.css");
+
 @font-face {
-    font-family: warnock-pro;
+  font-family:"warnock-pro";
+  src:url("https://use.typekit.net/af/3b718d/0000000000000000000173fc/27/l?subset_id=1&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/3b718d/0000000000000000000173fc/27/d?subset_id=1&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/3b718d/0000000000000000000173fc/27/a?subset_id=1&fvd=n7&v=3") format("opentype");
+  font-style:normal;font-weight:700;
+}
+@font-face {
+  font-family:"warnock-pro-it";
+  src:url("https://use.typekit.net/af/1e6e88/0000000000000000000173f9/27/l?subset_id=1&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/1e6e88/0000000000000000000173f9/27/d?subset_id=1&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/1e6e88/0000000000000000000173f9/27/a?subset_id=1&fvd=i4&v=3") format("opentype");
+  font-style:italic;font-weight:400;
+}
+@font-face {
+  font-family:"europa";
+  src:url("https://use.typekit.net/af/2c21a3/00000000000000003b9b12fe/27/l?subset_id=1&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/2c21a3/00000000000000003b9b12fe/27/d?subset_id=1&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/2c21a3/00000000000000003b9b12fe/27/a?subset_id=1&fvd=n3&v=3") format("opentype");
+  /*font-style:normal;font-weight:300;*/
+  /*e acelasi subset pt 300 si 700*/
+}
+
+
+
+/*@font-face {
+    font-family: "warnock-pro";
     src: url('../fonts/WarnockPro-Bold.otf');
 }
 @font-face {
-    font-family: warnock-pro-it;
+    font-family: "warnock-pro-it";
     src: url('../fonts/WarnockPro-It.otf');
 }
 @font-face {
-    font-family: europa-regular;
+    font-family: "europa";
     src: url('../fonts/apercu-regular.woff');
-}
-
-@import url('https://fonts.googleapis.com/css?family=Raleway&subset=latin-ext');
+}*/
 
 
 
@@ -29,12 +48,12 @@ hr.black{border-top: 1px solid #000;}
 body{
   padding-top:110px;
   padding-bottom:20px;
-  font-size:15px;
+  font-size:16px;
   line-height: 1.3em;
   color: #000000;
-  font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-style:normal;
-  font-weight:400;
+  font-family: "europa", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 #main-overlay{
   background:rgba(255,255,255,0.5);
@@ -94,23 +113,23 @@ img.fullwidth{
 
 h1,h2,h3,
 .h1,.h2,.h3{
-  font-family: warnock-pro,serif;
+  font-family: "warnock-pro", serif;
   line-height:1.15;
 }
 h1.cursive,h2.cursive,h3.cursive,
 .h1.cursive,.h2.cursive,.h3.cursive{
-  font-family: warnock-pro-it, serif;
+  font-family: "warnock-pro-it", serif;
 }
 h1.cursive,h2.cursive,h3.cursive,
 .h1.cursive,.h2.cursive,.h3.cursive{
-  font-family: warnock-pro-it;
+  font-family: "warnock-pro-it", serif;
 }
 
 /* with right line and break line*/
 h1{
   font-size: 42px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
 }
 h1 span{
@@ -147,7 +166,7 @@ h3.header_title{
   margin-top: 35px;
   margin-bottom: 0;
   z-index: 100;
-  font-family: 'warnock-pro-it', serif;
+  font-family: "warnock-pro-it", serif;
   font-weight: normal;
   font-size: 20px;
   text-align: center;
@@ -173,13 +192,13 @@ h3.header_title span{
 
 h4, .h4{
   font-size: 12px;
-  font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "europa","Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
 }
 h5, .h5{
-  font-family: europa-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "europa","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 15px;
@@ -249,6 +268,21 @@ blockquote:before {
   padding: 0px;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+
+
 .vertical-text{
   -ms-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -297,13 +331,12 @@ article{
   position: relative;
 }
 article h3{
-  font-family: warnock-pro,serif;
+  font-family: "warnock-pro", serif;
   font-size: 24px;
   margin: 35px 0 20px;
 }
 article p{
   font-size: 16px;
-  text-align: justify;
 }
 
 .main-article{
@@ -316,10 +349,25 @@ article p{
 
 
 /*footer*/
-footer{padding:30px 0;}
-#socials{text-align: center;margin:10px 0;padding:0;}
-#socials li{display: inline-block;margin: 0px 10px;padding:5px 20px; color: #999;font-weight: 500;font-size: 12px; font-family: europa-regular;}
-#socials li span{color: #333;font-weight: bold;}
+footer{
+  padding: 30px 0;
+}
+#socials{
+  text-align: center;
+  margin: 10px 0;
+  padding: 0;
+}
+#socials li{
+  display: inline-block;
+  margin: 0px 10px;
+  padding:5px 20px; 
+  color: #999;
+  font-size: 12px; 
+}
+#socials li span{
+  color: #333;
+  font-weight: bold;
+}
 
 
 /* general queries*/
