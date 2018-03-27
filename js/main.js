@@ -16,9 +16,9 @@ jQuery(document).ready(function(){
     $("#dropdownSelectAcc").html('<div class="line-link start0 active"><span></span>' + $(this).text()+' </div>');
   });
 
-  $(document).ready(function(){ 
+  if($('.select2').length > 0) {
     $(".select2").select2(); 
-  });
+  }
 
   var msnry = $('.grid');
   msnry.imagesLoaded( function() {
@@ -35,13 +35,18 @@ jQuery(document).ready(function(){
     event.preventDefault();
     $('.go_toggle').removeClass('active');
     $(this).addClass('active');
-    // $('html, body').animate({
-    //     scrollTop: $($.attr(this, 'href')).offset().top +150
-    // }, 500);
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top +150
+    }, 500);
   });
 
-  $('.carousel').carousel();
+  if($('.carousel-simple').length > 0) {
+    $('.carousel-simple').carousel();
+  }
 
+  if($('#bootstrap-touch-slider').length > 0) {
+    $('#bootstrap-touch-slider').bsTouchSlider();
+  }
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
