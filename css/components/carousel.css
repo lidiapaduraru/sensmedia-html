@@ -27,14 +27,42 @@
 .carousel.carousel-simple .carousel-control.left .prev{
   left: 0;
   text-align: left;
-  padding-left: 20px;
+  padding: 0 0 0 20px;
   background: url('../../img/icons/thin_arrow_left.png') no-repeat scroll center left #FFFFFF;
 }
 .carousel.carousel-simple .carousel-control.right .next{
   right: 0;
   text-align: right;
-  padding-right: 20px;
+  padding: 0 20px 0 0;
   background: url('../../img/icons/thin_arrow_right.png') no-repeat scroll center right #FFFFFF;
+}
+
+.slide-controls-right{
+  position: absolute;
+  bottom: 10px;
+  z-index: 100;
+  width: auto;
+  height: 42px;
+  right: 20px;
+}
+
+.slide-controls-right .prev{
+  padding: 5px;
+  border: 1px solid #000;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  background: url('../../img/icons/sleft.png') no-repeat scroll center center #FFFFFF;
+}
+.slide-controls-right .next{
+  padding: 5px;
+  border: 1px solid #000;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  background: url('../../img/icons/sright.png') no-repeat scroll center center #FFFFFF;
 }
 
 .carousel.carousel-simple .carousel-caption {
