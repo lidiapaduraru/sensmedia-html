@@ -220,6 +220,9 @@ ul.list li{
 p{
   line-height: 1.7em;
 }
+.numeric{
+  font-variant-numeric: oldstyle-nums proportional-nums;
+}
 
 .inline-block{display:inline-block;}
 .block{display:block;}
