@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/akg4amu.css");
+/*@import url("https://use.typekit.net/akg4amu.css");
 
 @font-face {
   font-family:"warnock-pro";
@@ -13,12 +13,10 @@
 @font-face {
   font-family:"europa";
   src:url("https://use.typekit.net/af/2c21a3/00000000000000003b9b12fe/27/l?subset_id=1&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/2c21a3/00000000000000003b9b12fe/27/d?subset_id=1&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/2c21a3/00000000000000003b9b12fe/27/a?subset_id=1&fvd=n3&v=3") format("opentype");
-  /*font-style:normal;font-weight:300;
-  /*e acelasi subset pt 300 si 700*/
-}
+}*/
 
 
-/*@font-face {
+@font-face {
     font-family: "warnock-pro";
     src: url('../fonts/WarnockPro-Bold.otf');
 }
@@ -29,7 +27,7 @@
 @font-face {
     font-family: "europa";
     src: url('../fonts/apercu-regular.woff');
-}*/
+}
 
 
 
