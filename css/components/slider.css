@@ -1,5 +1,7 @@
 body.home{
   padding-top: 0;
+  padding-bottom: 0;
+  background: #F5F5F5;
 }
 body.home .navbar{
   background: none;
@@ -30,6 +32,29 @@ body.home .navbar{
 .bs-slider > .carousel-inner > .item > a > img {
   margin: 0 0 0 auto;
   width: 40%;
+}
+
+
+.homepage_follow{
+  position: relative;
+  top: -50px;
+  left: 120px;
+  width:250px;
+  z-index: 99;
+  height: 1px;
+  overflow: visible;
+}
+.homepage_follow .follow{
+  font-family: "europa", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  position:relative;
+  top: 2px;
+}
+.homepage_follow li{
+  display: inline-block;
+  padding: 0 10px;
 }
 
 /********************
@@ -307,7 +332,7 @@ body.home .navbar{
 .slide-ctrl .right_control,
 .slide-ctrl .explore_now{
   position: absolute;
-  top: calc(35% + 300px);
+  bottom: 100px;
   background: transparent;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
