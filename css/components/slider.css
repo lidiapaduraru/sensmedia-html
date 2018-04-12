@@ -260,9 +260,9 @@ body.home .navbar{
   left: 0;
   right: 0;
 }
-.slide-text h1,
-.slide-text h2,
-.slide-text h3{
+.slide-text p.h1,
+.slide-text p.h2,
+.slide-text p.h3{
   text-align: center;
   font-weight: bold;
   padding: 0;
@@ -272,16 +272,16 @@ body.home .navbar{
   text-align: left;
   white-space: nowrap;
 }
-.slide-text h1 span,
-.slide-text h2 span,
-.slide-text h3 span{
+.slide-text p.h1 span,
+.slide-text p.h2 span,
+.slide-text p.h3 span{
   position: relative; 
   width:35px;
   left: -50px;
 }
-.slide-text h1 span:before,
-.slide-text h2 span:before,
-.slide-text h3 span:before{
+.slide-text p.h1 span:before,
+.slide-text p.h2 span:before,
+.slide-text p.h3 span:before{
   content: "";
   position: absolute;
   border-bottom: 4px solid black;
@@ -290,22 +290,22 @@ body.home .navbar{
   left: 0;
 }
 
-.slide-text h1 span:after,
-.slide-text h2 span:after,
-.slide-text h3 span:after{
+.slide-text p.h1 span:after,
+.slide-text p.h2 span:after,
+.slide-text p.h3 span:after{
   content:"";
 }
 
-.slide-text > h1 {
+.slide-text > p.h1 {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
-.slide-text > h2 {
+.slide-text > p.h2 {
   padding-left: 60px;
   -webkit-animation-delay: 0.75s;
   animation-delay: 0.75s;
 }
-.slide-text > h3 {
+.slide-text > p.h3 {
   padding-left: 60px;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
@@ -351,9 +351,9 @@ body.home .navbar{
     top: 70%;
     width: 60%;
   }
-  .slide-text h1,
-  .slide-text h2,
-  .slide-text h3{
+  .slide-text p.h1,
+  .slide-text p.h2,
+  .slide-text p.h3{
     font-size: 60px;
   }
   .slide-ctrl .right_control,
@@ -368,9 +368,9 @@ body.home .navbar{
   .item .slide-text{
     width: 70%;
   }
-  .slide-text h1,
-  .slide-text h2,
-  .slide-text h3{
+  .slide-text p.h1,
+  .slide-text p.h2,
+  .slide-text p.h3{
     font-size: 44px;
   }
   .slide-ctrl .right_control{
@@ -388,9 +388,9 @@ body.home .navbar{
     top: 70%;
     width: 96%;
   }
-  .slide-text h1,
-  .slide-text h2,
-  .slide-text h3{
+  .slide-text p.h1,
+  .slide-text p.h2,
+  .slide-text p.h3{
     font-size: 27px;
   }
 }
