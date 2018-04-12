@@ -1,9 +1,14 @@
 body.home{
+  min-height: 100%;
   padding-top: 0;
+  padding-bottom: 0;
+  background: #F5F5F5;
+  background: rgba(245,245,245,0.45);
 }
 body.home .navbar{
   background: none;
 }
+
 
 .bs-slider{
   overflow: hidden;
@@ -32,6 +37,29 @@ body.home .navbar{
   width: 40%;
 }
 
+
+.homepage_follow{
+  position: relative;
+  top: -50px;
+  left: 120px;
+  width:250px;
+  z-index: 99;
+  height: 0px;
+  overflow: visible;
+}
+.homepage_follow .follow{
+  font-family: "europa", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  position:relative;
+  top: 2px;
+}
+.homepage_follow li{
+  display: inline-block;
+  padding: 0 10px;
+}
+
 /********************
 *****Slide effect
 **********************/
@@ -47,11 +75,11 @@ body.home .navbar{
   position: absolute;
   left: 0 !important;
   display: block !important;
-  -webkit-transition: all ease-in-out 1s;
-  -moz-transition: all ease-in-out 1s;
-  -ms-transition: all ease-in-out 1s;
-  -o-transition: all ease-in-out 1s;
-  transition: all ease-in-out 1s;
+  -webkit-transition: all ease-in-out 1.2s;
+  -moz-transition: all ease-in-out 1.2s;
+  -ms-transition: all ease-in-out 1.2s;
+  -o-transition: all ease-in-out 1.2s;
+  transition: all ease-in-out 1.2s;
 }
 .fade .item .slide-ctrl{
   display: none;
@@ -75,7 +103,7 @@ body.home .navbar{
   visibility: visible;
 }
 .fade .item.shaded{
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 /* overwrite animate */
@@ -254,15 +282,15 @@ body.home .navbar{
   overflow: visible;
 }
 .item.shaded .slide-text {
-  right: -5%;
+  right: -7%;
 }
 .item.active .slide-text{
   left: 0;
   right: 0;
 }
-.slide-text h1,
-.slide-text h2,
-.slide-text h3{
+.slide-text p.h1,
+.slide-text p.h2,
+.slide-text p.h3{
   text-align: center;
   font-weight: bold;
   padding: 0;
@@ -272,48 +300,42 @@ body.home .navbar{
   text-align: left;
   white-space: nowrap;
 }
-.slide-text h1 span,
-.slide-text h2 span,
-.slide-text h3 span{
-  position: relative; 
-  width:35px;
-  left: -50px;
-}
-.slide-text h1 span:before,
-.slide-text h2 span:before,
-.slide-text h3 span:before{
-  content: "";
-  position: absolute;
-  border-bottom: 4px solid black;
-  top: 50%;
-  width: 35px;
-  left: 0;
+.slide-text p.h1 span,
+.slide-text p.h2 span,
+.slide-text p.h3 span{
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  height: 3px;
+  background: #000;
+  width:65px;
+  margin-right: 10px;
 }
 
-.slide-text h1 span:after,
-.slide-text h2 span:after,
-.slide-text h3 span:after{
+.slide-text p.h1 span:after,
+.slide-text p.h2 span:after,
+.slide-text p.h3 span:after{
   content:"";
 }
 
-.slide-text > h1 {
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+.slide-text > p.h1 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
-.slide-text > h2 {
+.slide-text > p.h2 {
   padding-left: 60px;
-  -webkit-animation-delay: 0.75s;
-  animation-delay: 0.75s;
+  -webkit-animation-delay: 0.35s;
+  animation-delay: 0.35s;
 }
-.slide-text > h3 {
+.slide-text > p.h3 {
   padding-left: 60px;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .slide-ctrl .right_control,
 .slide-ctrl .explore_now{
   position: absolute;
-  top: calc(35% + 300px);
+  bottom: 100px;
   background: transparent;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
@@ -321,7 +343,7 @@ body.home .navbar{
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .slide-ctrl .explore_now{
-  left: 300px;
+  left: calc(25% + 70px);
 }
 
 
@@ -351,15 +373,19 @@ body.home .navbar{
     top: 70%;
     width: 60%;
   }
-  .slide-text h1,
-  .slide-text h2,
-  .slide-text h3{
+  .slide-text p.h1,
+  .slide-text p.h2,
+  .slide-text p.h3{
     font-size: 60px;
   }
   .slide-ctrl .right_control,
   .slide-ctrl .explore_now{
     top: calc(70% + 200px);
   }
+  .slide-ctrl .explore_now{
+    left: calc(20% + 70px);
+  }
+
 }
 
 
@@ -368,9 +394,9 @@ body.home .navbar{
   .item .slide-text{
     width: 70%;
   }
-  .slide-text h1,
-  .slide-text h2,
-  .slide-text h3{
+  .slide-text p.h1,
+  .slide-text p.h2,
+  .slide-text p.h3{
     font-size: 44px;
   }
   .slide-ctrl .right_control{
@@ -388,9 +414,10 @@ body.home .navbar{
     top: 70%;
     width: 96%;
   }
-  .slide-text h1,
-  .slide-text h2,
-  .slide-text h3{
+  .slide-text p.h1,
+  .slide-text p.h2,
+  .slide-text p.h3{
     font-size: 27px;
+    padding-left:0;
   }
 }
