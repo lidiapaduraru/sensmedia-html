@@ -109,7 +109,7 @@
 }
 @media (min-width: 768px){
   #main_sidebar_menu.visible{
-    width: 500px;
+    width: 550px;
     padding-right: 45px;
   }
 }
