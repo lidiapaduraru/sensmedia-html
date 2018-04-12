@@ -1,11 +1,14 @@
 body.home{
+  min-height: 100%;
   padding-top: 0;
   padding-bottom: 0;
   background: #F5F5F5;
+  background: rgba(245,245,245,0.45);
 }
 body.home .navbar{
   background: none;
 }
+
 
 .bs-slider{
   overflow: hidden;
@@ -41,7 +44,7 @@ body.home .navbar{
   left: 120px;
   width:250px;
   z-index: 99;
-  height: 1px;
+  height: 0px;
   overflow: visible;
 }
 .homepage_follow .follow{
