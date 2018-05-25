@@ -225,6 +225,9 @@
 
 
 /*LEFT MENU pages - with hover line buttons*/
+#fixed_desktop_category_menu{
+  position:fixed;
+}
 .menu-wrapper h3{
   font-family: "warnock-pro-it", serif;
   font-style: normal;
